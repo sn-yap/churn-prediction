@@ -58,11 +58,11 @@ base_path = "./"
 preprocessor = joblib.load(base_path + 'preprocessor_pipeline.pkl')
 
 # Load the models
-lr = joblib.load('base_path + Logistic Regression_original.joblib')
-knn = joblib.load('base_path + KNeighborsClassifier_original.joblib')
-gb = joblib.load('base_path + GaussianNB_original.joblib')
-dt = joblib.load('base_path + Decision Tree_original.joblib')
-rf = joblib.load('base_path + Random Forest_original.joblib')
+lr = joblib.load(base_path + 'Logistic Regression_original.joblib')
+knn = joblib.load(base_path + 'KNeighborsClassifier_original.joblib')
+gb = joblib.load(base_path + 'GaussianNB_original.joblib')
+dt = joblib.load(base_path + 'Decision Tree_original.joblib')
+rf = joblib.load(base_path + 'Random Forest_original.joblib')
 
 # Define the path to the Excel file
 excel_file_path = "data_warehouse.xlsx"
