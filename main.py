@@ -52,7 +52,7 @@ import os
 
 
 # Define the base path
-# base_path = "./"
+base_path = "./"
 
 # Load the preprocessor pipeline
 preprocessor = joblib.load(base_path + 'preprocessor_pipeline.pkl')
