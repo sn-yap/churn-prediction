@@ -50,6 +50,8 @@ from datetime import datetime, date
 from io import StringIO
 import csv
 import os
+import openpyxl
+from openpyxl import load_workbook
 
 
 # Define the base path
@@ -66,7 +68,7 @@ dt = joblib.load(base_path + 'Decision Tree_original.joblib')
 rf = joblib.load(base_path + 'Random Forest_original.joblib')
 
 # Define the path to the Excel file
-excel_file_path = "./data_warehouse.xlsx"
+excel_file_path = "data_warehouse.xlsx"
 
 
 st.title("Attrition is Reversible: Unlocking Potential through Integrated Customer Segmentation and Churn Prediction in Telecom")
