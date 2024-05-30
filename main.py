@@ -485,9 +485,9 @@ with tab4:
                 mime='text/csv',
             )
 
-        # Update button to save all records to the data warehouse
-        if update_column.button("Update"):
-            save_record_to_warehouse(df)
+        # # Update button to save all records to the data warehouse
+        # if update_column.button("Update"):
+        #     save_record_to_warehouse(df)
 
     else:
         st.write("Please upload your data in the 'Data Upload' tab.")
