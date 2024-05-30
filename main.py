@@ -496,7 +496,7 @@ with tab5:
     st.write("Generate and view detailed reports based on your data.")
 
     # Embed the Power BI dashboard
-    st.components.v1.iframe(src = "https://app.powerbi.com/view?r=eyJrIjoiYWVkZDE5YTEtODdjOS00Mjc4LTk4YTMtNjQ1ZGNlMTExNzhmIiwidCI6IjBmZWQwM2EzLTQwMmQtNDYzMy1hOGNkLThiMzA4ODIyMjUzZSIsImMiOjEwfQ%3D%3D", width = 705, height = 486)
+    st.components.iframe(src = "https://app.powerbi.com/view?r=eyJrIjoiYWVkZDE5YTEtODdjOS00Mjc4LTk4YTMtNjQ1ZGNlMTExNzhmIiwidCI6IjBmZWQwM2EzLTQwMmQtNDYzMy1hOGNkLThiMzA4ODIyMjUzZSIsImMiOjEwfQ%3D%3D", width = 705, height = 486)
 
 
 # Content for Tab 6 - Data Warehouse
