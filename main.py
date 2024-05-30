@@ -43,6 +43,7 @@ import time
 # Deployment
 import joblib
 import streamlit as st
+import streamlit.components.v1 as components
 
 # Others
 from datetime import datetime, date
