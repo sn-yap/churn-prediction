@@ -502,34 +502,34 @@ with tab5:
     st.components.v1.iframe(src = "https://app.powerbi.com/view?r=eyJrIjoiYWVkZDE5YTEtODdjOS00Mjc4LTk4YTMtNjQ1ZGNlMTExNzhmIiwidCI6IjBmZWQwM2EzLTQwMmQtNDYzMy1hOGNkLThiMzA4ODIyMjUzZSIsImMiOjEwfQ%3D%3D", width = 705, height = 486)
 
 
-# Content for Tab 6 - Data Warehouse
-with tab6:
-    st.header("Data Warehouse")
-    st.write("Create, read, and update records stored in the data warehouse.")
+# # Content for Tab 6 - Data Warehouse
+# with tab6:
+#     st.header("Data Warehouse")
+#     st.write("Create, read, and update records stored in the data warehouse.")
 
-    # Check if the Excel file exists
-    if os.path.exists(excel_file_path):
-        # Read records from the Excel file
-        data_warehouse_df = pd.read_excel(excel_file_path)
-    else:
-        # Create an empty DataFrame if the Excel file doesn't exist
-        data_warehouse_df = pd.DataFrame(columns=relevant_columns)
+#     # Check if the Excel file exists
+#     if os.path.exists(excel_file_path):
+#         # Read records from the Excel file
+#         data_warehouse_df = pd.read_excel(excel_file_path)
+#     else:
+#         # Create an empty DataFrame if the Excel file doesn't exist
+#         data_warehouse_df = pd.DataFrame(columns=relevant_columns)
 
-    # Initialize data_warehouse in session state if it doesn't exist
-    if 'data_warehouse' not in st.session_state:
-        st.session_state.data_warehouse = data_warehouse_df
+#     # Initialize data_warehouse in session state if it doesn't exist
+#     if 'data_warehouse' not in st.session_state:
+#         st.session_state.data_warehouse = data_warehouse_df
 
-    # Display the data warehouse DataFrame
-    st.write(st.session_state.data_warehouse)
+#     # Display the data warehouse DataFrame
+#     st.write(st.session_state.data_warehouse)
 
-    # Provide a download link for the data warehouse DataFrame
-    csv_data = st.session_state.data_warehouse.to_csv(index=False).encode('utf-8')
-    st.download_button(
-        label="Export All Records",
-        data=csv_data,
-        file_name="data_warehouse.csv",
-        mime="text/csv"
-    )
+#     # Provide a download link for the data warehouse DataFrame
+#     csv_data = st.session_state.data_warehouse.to_csv(index=False).encode('utf-8')
+#     st.download_button(
+#         label="Export All Records",
+#         data=csv_data,
+#         file_name="data_warehouse.csv",
+#         mime="text/csv"
+#     )
 
-    # Save the data warehouse DataFrame to an Excel file
-    data_warehouse_df.to_excel(excel_file_path, index=False)
+#     # Save the data warehouse DataFrame to an Excel file
+#     data_warehouse_df.to_excel(excel_file_path, index=False)
